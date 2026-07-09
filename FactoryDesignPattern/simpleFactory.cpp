@@ -9,7 +9,7 @@ public:
 class BasicBurger : public Burger
 {
 public:
-    void prepare()
+    void prepare() override
     {
         cout << "We are preparing basic burger" << endl;
     }
@@ -18,7 +18,7 @@ public:
 class StandardBurger : public Burger
 {
 public:
-    void prepare()
+    void prepare() override
     {
         cout << "We are preparing standard burger" << endl;
     }
@@ -26,7 +26,7 @@ public:
 class PremiumBurger : public Burger
 {
 public:
-    void prepare()
+    void prepare() override
     {
         cout << "We are preparing premium burger" << endl;
     }
